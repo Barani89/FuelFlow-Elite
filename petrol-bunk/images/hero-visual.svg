@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="Glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fbe49b" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="Panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#222"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="44" fill="#080808"/>
+  <rect x="48" y="40" width="704" height="420" rx="34" fill="url(#Panel)" stroke="rgba(212,175,55,0.2)" stroke-width="2"/>
+  <circle cx="188" cy="210" r="72" fill="url(#Glow)" opacity="0.75"/>
+  <path d="M516 220c0 44-36 80-80 80s-80-36-80-80 36-80 80-80 80 36 80 80Z" fill="#111" stroke="#d4af37" stroke-width="6"/>
+  <path d="M520 228H302c-16 0-28 12-28 28v28c0 16 12 28 28 28h218c16 0 28-12 28-28v-28c0-16-12-28-28-28Z" fill="#111" opacity="0.92"/>
+  <rect x="116" y="310" width="256" height="24" rx="12" fill="#272727"/>
+  <rect x="116" y="370" width="504" height="18" rx="9" fill="#1a1a1a"/>
+  <rect x="116" y="344" width="384" height="10" rx="5" fill="#333"/>
+  <circle cx="540" cy="160" r="34" fill="#222" stroke="#d4af37" stroke-width="5"/>
+  <path d="M586 360L660 280" stroke="#d4af37" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <path d="M610 286L754 286" stroke="#d4af37" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="614" cy="108" r="10" fill="#d4af37"/>
+  <path d="M120 118C190 98 420 70 600 132" stroke="#d4af37" stroke-width="4" opacity="0.3"/>
+</svg>

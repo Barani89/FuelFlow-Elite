@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuelFlow Elite | Smart Petrol Bunk & EV Charging</title>
+    <meta name="description" content="Luxury petrol bunk and EV charging management system with premium services, fast booking, and smart energy solutions." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        <!-- Header / Navigation -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="#home" class="brand-logo">FuelFlow Elite</a>
+                <nav class="main-nav" id="mainNav">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#booking">Booking</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <button class="mobile-toggle" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Smart Energy Mobility</span>
+                    <h1>Luxury Petrol & EV Charging Management for Modern Drivers</h1>
+                    <p>Experience premium fuel services, smart charging, digital booking and fleet support in one elegant platform.</p>
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn-primary">Book Now</a>
+                        <a href="#services" class="btn btn-secondary">Explore Services</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Smart Support</span>
+                        </div>
+                        <div>
+                            <strong>150+</strong>
+                            <span>Premium Stations</span>
+                        </div>
+                        <div>
+                            <strong>99.9%</strong>
+                            <span>Uptime Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-tag">FuelFlow Elite</div>
+                        <div class="visual-image"></div>
+                        <div class="visual-copy">
+                            <h2>Fast. Smart. Refined.</h2>
+                            <p>Seamless service booking, luxury station amenities and intelligent EV charging all on one platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container section-header">
+                <span>Our Solutions</span>
+                <h2>Premium Petrol and EV Charging Services</h2>
+            </div>
+            <div class="container services-grid">
+                <article class="service-card">
+                    <h3>Petrol Refilling</h3>
+                    <p>High-performance petrol pumping with contactless payment, premium fuels, and express lanes for every vehicle.</p>
+                </article>
+                <article class="service-card accent-card">
+                    <h3>EV Charging</h3>
+                    <p>Fast and reliable electric vehicle charging with smart scheduling, energy optimization, and real-time availability.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Fleet Management</h3>
+                    <p>Enterprise-grade tracking, fuel analytics, automated invoicing and driver safety monitoring for fleet operators.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Booking Preview -->
+        <section class="booking-preview" id="booking">
+            <div class="container booking-grid">
+                <div class="booking-copy">
+                    <span>Reserve Your Service</span>
+                    <h2>Book Your Fuel or Charging Slot in Seconds</h2>
+                    <p>Reserve an instant slot for petrol, diesel, or EV charging and get priority access to our luxury station network.</p>
+                    <ul>
+                        <li>Real-time slot availability</li>
+                        <li>Flexible service types</li>
+                        <li>Secure online confirmation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Start Booking</a>
+                </div>
+                <div class="booking-form-card">
+                    <form id="bookingForm" class="form-card" novalidate>
+                        <h3>Online Booking</h3>
+                        <label for="bookingName">Full Name</label>
+                        <input type="text" id="bookingName" name="bookingName" placeholder="Your name" required />
+                        <label for="bookingEmail">Email Address</label>
+                        <input type="email" id="bookingEmail" name="bookingEmail" placeholder="name@example.com" required />
+                        <label for="serviceType">Service Type</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select service</option>
+                            <option value="petrol">Petrol Refuel</option>
+                            <option value="diesel">Diesel Refuel</option>
+                            <option value="ev">EV Charging</option>
+                        </select>
+                        <label for="bookingDate">Preferred Date</label>
+                        <input type="date" id="bookingDate" name="bookingDate" required />
+                        <button type="submit" class="btn btn-secondary">Confirm Booking</button>
+                        <p class="form-message" id="bookingMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container section-header">
+                <span>Customer Feedback</span>
+                <h2>Trusted by Drivers and Fleet Managers</h2>
+            </div>
+            <div class="container testimonials-grid">
+                <article class="testimonial-card">
+                    <p>"FuelFlow Elite transformed our fleet refueling experience with faster service and smarter analytics. The premium stations are unmatched."</p>
+                    <h4>santhosh kumar</h4>
+                    <span>Operations Lead</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>"The EV charging network is elegant and efficient. Booking a slot is effortless, and the station environment feels high-end."</p>
+                    <h4>praveen</h4>
+                    <span>EV Owner</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>"Excellent support, beautiful design, and a reliable charging ecosystem. It feels like a premium mobility partner."</p>
+                    <h4>balaji</h4>
+                    <span>Corporate Client</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container section-header">
+                <span>FAQ</span>
+                <h2>Questions About Our Services</h2>
+            </div>
+            <div class="container faq-grid">
+                <div class="faq-item">
+                    <h3>How do I book an EV charging slot?</h3>
+                    <p>Use our booking form to choose EV charging, select your date, and receive instant confirmation via email.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I pay digitally at the station?</h3>
+                    <p>Yes. We support contactless payments, mobile wallets, and corporate billing for premium customers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer fleet management solutions?</h3>
+                    <p>Absolutely. Our platform provides fuel tracking, analytics dashboards, and automated reporting for fleets.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <span>Get in Touch</span>
+                    <h2>Luxury Support for Your Mobility Needs</h2>
+                    <p>Contact our team for custom fuel plans, EV charging partnerships, and premium station access.</p>
+                    <div class="contact-details">
+                        <div>
+                            <strong>Call Us</strong>
+                            <p>+91 8148263884</p>
+                        </div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>baranidharan841@gmail.com</p>
+                        </div>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Chennai, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <form id="contactForm" class="form-card" novalidate>
+                        <h3>Contact Form</h3>
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="contactName" placeholder="Your name" required />
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="name@example.com" required />
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="4" placeholder="Tell us your requirement" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-message" id="contactMessageStatus"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Map / Location -->
+        <section class="map-section">
+            <div class="container map-card">
+                <div class="map-overlay">
+                    <h2>Find Our Elite Stations</h2>
+                    <p>Locate our premium petrol bunk and EV charging stations across the city.</p>
+                </div>
+                <div class="map-placeholder">
+                    <p>Google Map integration placeholder</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div>
+                    <a href="#home" class="brand-logo">FuelFlow Elite</a>
+                    <p>Connecting luxury fuel services with intelligent EV charging for modern mobility.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#booking">Booking</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <p>&copy; 2026 FuelFlow Elite. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

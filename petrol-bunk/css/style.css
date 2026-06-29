@@ -1,0 +1,648 @@
+/*
+  FuelFlow Elite - Main Stylesheet
+  Premium dark luxury theme with modern layout and animated elements.
+*/
+
+:root {
+    --bg: #070707;
+    --surface: #111111;
+    --surface-soft: #1c1c1c;
+    --text: #f8f5f1;
+    --muted: #b8b3a8;
+    --gold: #d4af37;
+    --gold-soft: rgba(212, 175, 55, 0.18);
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    --radius: 24px;
+    --transition: 0.35s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, rgba(212, 175, 55, 0.12), transparent 33%),
+                linear-gradient(180deg, #070707 0%, #0d0d0d 100%);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1180px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(18px);
+    background: rgba(7, 7, 7, 0.82);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.brand-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--gold);
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+.main-nav a {
+    color: var(--muted);
+    transition: color var(--transition);
+}
+
+.main-nav a:hover {
+    color: var(--text);
+}
+
+.mobile-toggle {
+    display: none;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 0.9rem 1.1rem;
+    cursor: pointer;
+}
+
+.hero-section {
+    padding: 5rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-copy .eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.78rem;
+}
+
+.hero-copy h1 {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+    line-height: 0.95;
+    max-width: 10ch;
+    margin-bottom: 1.5rem;
+}
+
+.hero-copy p {
+    max-width: 36rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.95rem 1.75rem;
+    font-weight: 600;
+    transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #d4af37, #ffdb7b);
+    color: #060606;
+    box-shadow: 0 16px 36px rgba(212, 175, 55, 0.24);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.hero-stats div {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+    min-width: 9rem;
+}
+
+.hero-stats strong {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.35rem;
+    color: var(--text);
+}
+
+.hero-stats span {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.visual-card {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(16,16,16,0.95));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    padding: 2rem;
+    min-height: 32rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.visual-tag {
+    display: inline-flex;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.12);
+    color: var(--gold);
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+}
+
+.visual-image {
+    height: 18rem;
+    border-radius: 28px;
+    background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.35), transparent 32%),
+                url('../images/hero-visual.svg') center/cover no-repeat,
+                linear-gradient(180deg, #171717 0%, #050505 100%);
+    margin-bottom: 1.75rem;
+    position: relative;
+}
+
+.visual-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 40%),
+                radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 18%);
+    border-radius: inherit;
+}
+
+.visual-copy h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.9rem;
+}
+
+.visual-copy p {
+    color: var(--muted);
+    line-height: 1.85;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header span {
+    display: inline-block;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.78rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-header h2 {
+    font-size: clamp(2.25rem, 3vw, 3rem);
+    margin-top: 0.5rem;
+}
+
+.services-grid,
+.testimonials-grid,
+.faq-grid,
+.contact-grid,
+.booking-grid {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.service-card,
+.testimonial-card,
+.faq-item,
+.form-card,
+.map-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.service-card {
+    min-height: 18rem;
+}
+
+.service-card h3,
+.testimonial-card h4,
+.faq-item h3,
+.form-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.service-card p,
+.testimonial-card p,
+.faq-item p {
+    color: var(--muted);
+    line-height: 1.85;
+}
+
+.accent-card {
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.12), rgba(17, 17, 17, 0.95));
+    border-color: rgba(212, 175, 55, 0.18);
+}
+
+.booking-preview {
+    padding: 4rem 0;
+}
+
+.booking-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: stretch;
+}
+
+.booking-copy ul {
+    list-style: none;
+    margin: 1.8rem 0 2.2rem;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.booking-copy li {
+    position: relative;
+    padding-left: 1.75rem;
+    color: var(--muted);
+}
+
+.booking-copy li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+
+.form-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    color: var(--text);
+    padding: 1rem 1.15rem;
+    outline: none;
+    transition: border-color var(--transition), background-color var(--transition);
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    border-color: rgba(212, 175, 55, 0.6);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.form-card label {
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-card button {
+    margin-top: 0.5rem;
+}
+
+.form-message {
+    min-height: 1.25rem;
+    color: #c5a67b;
+    font-size: 0.95rem;
+}
+
+.testimonials-section,
+.faq-section,
+.contact-section {
+    padding: 4rem 0;
+}
+
+.testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonial-card {
+    min-height: 18rem;
+}
+
+.testimonial-card h4 {
+    margin-top: 1.75rem;
+    font-size: 1rem;
+}
+
+.testimonial-card span {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.faq-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.faq-item {
+    min-height: 14rem;
+}
+
+.contact-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.contact-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-details {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-details div {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.2rem 1.4rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-details strong {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--gold);
+}
+
+.map-section {
+    padding-bottom: 4.5rem;
+}
+
+.map-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 24rem;
+    display: flex;
+    align-items: stretch;
+}
+
+.map-overlay {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    z-index: 1;
+    max-width: 28rem;
+    padding: 1.75rem 2rem;
+    background: rgba(7, 7, 7, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 26px;
+    backdrop-filter: blur(12px);
+}
+
+.map-overlay h2 {
+    margin-bottom: 0.75rem;
+}
+
+.map-overlay p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.map-placeholder {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.06)),
+                url('../images/map-placeholder.svg') center/65% no-repeat;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.site-footer {
+    padding: 2.5rem 0 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.site-footer p,
+.footer-links a {
+    color: var(--muted);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a:hover {
+    color: var(--text);
+}
+
+/* Smooth appear animations */
+section,
+.form-card,
+.service-card,
+.testimonial-card,
+.faq-item,
+.contact-details div,
+.map-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.9s ease forwards;
+}
+
+section:nth-of-type(1) { animation-delay: 0.05s; }
+section:nth-of-type(2) { animation-delay: 0.12s; }
+section:nth-of-type(3) { animation-delay: 0.18s; }
+section:nth-of-type(4) { animation-delay: 0.24s; }
+section:nth-of-type(5) { animation-delay: 0.3s; }
+section:nth-of-type(6) { animation-delay: 0.36s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-grid,
+    .services-grid,
+    .testimonials-grid,
+    .faq-grid,
+    .contact-grid,
+    .booking-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-preview,
+    .testimonials-section,
+    .faq-section,
+    .contact-section {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: inline-flex;
+    }
+
+    .hero-section {
+        padding-top: 3.5rem;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(2.5rem, 8vw, 3.3rem);
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .visual-card {
+        min-height: 26rem;
+    }
+
+    .booking-copy ul {
+        gap: 0.9rem;
+    }
+
+    .map-overlay {
+        position: static;
+        background: rgba(7, 7, 7, 0.8);
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .hero-stats {
+        flex-direction: column;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .world {
+        font-size: 0.9rem;
+    }
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
